@@ -196,7 +196,7 @@ const Title = styled.div`
 `
 
 const Answers = styled.div`
-    flex-direction: column
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 `
@@ -271,26 +271,26 @@ const AnswerText = styled.div`
     align-items: center;
 
     /* 나머지는 빅데스크탑 */
-    font-size: 24pt;
+    font-size: 18pt;
 
     @media screen and (max-width:1799px) {
     /* 데스크탑 */
-    font-size: 21pt;
+    font-size: 16pt;
     }
 
     @media screen and (max-width:1199px) {
     /* 타블렛 가로 */
-    font-size: 18pt;
+    font-size: 14pt;
     }
 
     @media screen and (max-width:899px) {
     /* 모바일 가로, 타블렛 세로 */
-    font-size: 15pt;
+    font-size: 12pt;
     }
 
     @media screen and (max-width:599px) {
     /* 모바일 세로 */
-    font-size: 12pt;
+    font-size: 10pt;
     }
 `
 

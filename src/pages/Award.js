@@ -7,7 +7,15 @@ const Award = (props) => {
     {
         return (
             <AwardText>
-            <p style={{color: "mediumseagreen"}}>플래티넘</p>
+            <p style={{color: "goldenrod"}}>퍼펙트! 당신은 진정한 하스왕!</p>
+            </AwardText>
+        )
+    }
+    else if(props.score >= 90)
+    {
+        return (
+            <AwardText>
+            <p style={{color: "deepskyblue"}}>여관주인 밑에서 일해보시는 건 어떤가요?</p>
             </AwardText>
         )
     }
@@ -15,7 +23,15 @@ const Award = (props) => {
     {
         return (
             <AwardText>
-            <p style={{color: "goldenrod"}}>골드</p>
+            <p style={{color: "mediumaquamarine"}}>하스 내공이 상당하시군요.</p>
+            </AwardText>
+        )
+    }
+    else if(props.score >= 70)
+    {
+        return (
+            <AwardText>
+            <p style={{color: "gold"}}>하잘알 인정합니다.</p>
             </AwardText>
         )
     }
@@ -23,15 +39,7 @@ const Award = (props) => {
     {
         return (
             <AwardText>
-            <p style={{color: "silver"}}>실버</p>
-            </AwardText>
-        )
-    }
-    else if(props.score >= 40)
-    {
-        return (
-            <AwardText>
-            <p>브론즈</p>
+            <p style={{color: "grey"}}>참 잘했어요!</p>
             </AwardText>
         )
     }
@@ -39,7 +47,7 @@ const Award = (props) => {
     {
         return (
             <AwardText>
-            <p>아이언</p>
+            <p style={{color: "maroon"}}>하스백성 대신에 하스왕이 되거라...</p>
             </AwardText>
         )
     }
